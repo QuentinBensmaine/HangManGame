@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jeu du pendu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta title="Jeu du pendu">
+    <script src="data.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<html>
+
+<body>
+    <h1>
+        Jeu du pendu
+    </h1>
+    <section id="menu">
+        <div id="mode">
+            <button type="button" id="1j">1 Joueur</button>
+            <button type="button" id="2j">2 Joueurs</button>
+            <button type="button" id="0j">Ordinateur</button>
+        </div>
+    </section>
+    <section id="jeu">
+        <div id="niv" style="display : none">
+            <button type="button" id="facile">Facile</button>
+            <button type="button" id="difficile">Difficile</button>
+        </div>
+        <div id="entrerMot" style="display : none">
+            <textarea id="motentre" placeholder="Entrez le mot à deviner"></textarea>
+            <button id="essaye">Go!</button>
+        </div>
+        <div id="wrapper" style="display : none">
+            <h1>Jeu</h1>
+            <div id="lettres" style="display : none">
+                <textarea id="text" placeholder="Entrez la lettre à tester" maxlength="1"></textarea>
+                <button id="go">Go!</button>
+            </div>
+            <div id="hold">
+            </div>
+            <p id="mylives"></p>
+            <p id="tests"></p>
+            <p id="prompt"></p>
+            <canvas id="stickman" width="300" height="150">This Text will show if the Browser does NOT support HTML5
+                Canvas tag</canvas>
+            <div id="container">
+            </div>
+            <button id="reset">Play again</button>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>
